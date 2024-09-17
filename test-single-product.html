@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Management System</title>
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH2N2gxyb0V2ZlbjlN28Vq5o1H/BQsy2v/5ITpK+/wXxhERKxJf1TTlqDJX6LgU6TzpZ5VkA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <span><i class="fas fa-phone-alt"></i> +123 456 7890</span>
+                <span><i class="fas fa-envelope"></i> email@example.com</span>
+            </div>
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <h1>Grocery Store</h1>
+            </div>
+            <!-- Nav Links -->
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Categories</a>
+                <a href="#">Offers</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </nav>
+            <!-- Search, Cart, and Account Icons -->
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="cart-count">2</span></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+     <!-- Hero Section with Slider -->
+
+    <!-- Single Product Section -->
+    <main class="single-product">
+        <div class="product-container">
+            <div class="product-image">
+                <img src="https://via.placeholder.com/600x600" alt="Fresh Apples">
+            </div>
+            <div class="product-details">
+                <h1>Fresh Apples</h1>
+                <p class="price">$2.99 per lb</p>
+                <p class="description">
+                    Enjoy the crisp, sweet taste of fresh apples. Our apples are carefully selected to ensure quality and taste. Perfect for snacking, baking, or adding to your favorite recipes.
+                </p>
+                <div class="quantity">
+                    <button class="qty-btn" onclick="decreaseQuantity()">-</button>
+                    <input type="number" id="product-quantity" value="1" min="1">
+                    <button class="qty-btn" onclick="increaseQuantity()">+</button>
+                </div>
+                <a href="#" class="btn add-to-cart">Add to Cart</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Related Products Section -->
+    <section class="related-products">
+        <h2>Related Products</h2>
+        <div class="product-grid">
+            <!-- Related product cards (reuse product card structure from previous) -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x300" alt="Organic Bananas">
+                <h3><a href="single-product.html">Organic Bananas</a></h3>
+                <p>$1.29 per lb</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x300" alt="Carrots">
+                <h3><a href="single-product.html">Carrots</a></h3>
+                <p>$0.89 per lb</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <!-- More related product cards -->
+        </div>
+    </section>
+
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+
+    <script src="assets/JS/test.js"></script>
+</body>
+</html>

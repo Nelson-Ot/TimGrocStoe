@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMart - Online Grocery Store</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+     <!-- <link rel="stylesheet" href="tyest.css"> -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <span><i class="fas fa-phone-alt"></i> +123 456 789</span>
+                <span><i class="fas fa-envelope"></i> support@freshmart.com</span>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <nav>
+            <div class="logo">
+                <h1>FreshMart</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="cart-count">2</span></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Page -->
+    <main class="cart">
+        <div class="cart-container">
+            <h1>Your Cart</h1>
+            <div class="cart-items">
+                <!-- Item 1 -->
+                <div class="cart-item">
+                    <img src="https://via.placeholder.com/100x100" alt="Product Image">
+                    <div class="item-details">
+                        <h3><a href="single-product.html">Fresh Apples</a></h3>
+                        <p>Kes2.99 per kg</p>
+                        <div class="quantity">
+                            <button class="qty-btn" onclick="decreaseQuantity(this)">-</button>
+                            <input type="number" class="item-quantity" value="1" min="1">
+                            <button class="qty-btn" onclick="increaseQuantity(this)">+</button>
+                        </div>
+                        <button class="remove-btn" onclick="removeItem(this)">Remove</button>
+                    </div>
+                </div>
+                <!-- More cart items here -->
+            </div>
+            <div class="cart-summary">
+                <h2>Cart Summary</h2>
+                <p>Total Items: <span id="total-items">1</span></p>
+                <p>Total Price: <span id="total-price">$2.99</span></p>
+                <a href="checkout.html" class="btn checkout-btn">Proceed to Checkout</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+
+    <script src="assets/JS/cart.js"></script>
+</body>
+</html>

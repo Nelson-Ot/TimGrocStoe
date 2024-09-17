@@ -36,3 +36,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+function increaseQuantity() {
+    let quantityInput = document.getElementById("product-quantity");
+    let currentValue = parseInt(quantityInput.value);
+    quantityInput.value = currentValue + 1;
+}
+
+function decreaseQuantity() {
+    let quantityInput = document.getElementById("product-quantity");
+    let currentValue = parseInt(quantityInput.value);
+    if (currentValue > 1) {
+        quantityInput.value = currentValue - 1;
+    }
+}
