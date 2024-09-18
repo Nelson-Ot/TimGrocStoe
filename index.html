@@ -37,7 +37,7 @@
             </ul>
             <div class="nav-icons">
                 <a href="#"><i class="fas fa-search"></i></a>
-                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="cart-count">2</span></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="cart-count" id="cart-count">0</span></a>
                 <a href="#"><i class="fas fa-user"></i></a>
             </div>
         </nav>
@@ -91,7 +91,7 @@
             <img src="images/products_home/mike-houser-drVTfDgjGy8-unsplash.jpg" alt="Product 1">
             <h3><a href="single-product.html">Fresh Tomatoes</a></h3>
             <p>kes180/kg</p>
-            <a href="#" class="add-to-cart-btn">Add to Cart</a>
+            <a href="#" class="add-to-cart-btn" onclick="addToCart({ id: 'product1', name: 'Fresh Tomatoes' })">Add to Cart</a>
         </div>
         <div class="product-card">
             <img src="images/products_home/badreddine-wider-nGkxwUQdcU4-unsplash.jpg" alt="Product 2">

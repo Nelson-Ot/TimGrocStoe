@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMart - Online Grocery Store</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+     <!-- <link rel="stylesheet" href="tyest.css"> -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <span><i class="fas fa-phone-alt"></i> +123 456 789</span>
+                <span><i class="fas fa-envelope"></i> support@freshmart.com</span>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <nav>
+            <div class="logo">
+                <h1>FreshMart</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="cart-count" id="cart-count">0</span></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Checkout Section -->
+    <main class="checkout-page">
+        <div class="checkout-container">
+            <h1>Checkout</h1>
+            <div class="checkout-wrapper">
+                <!-- Billing Details -->
+                <div class="billing-details">
+                    <h2>Billing Details</h2>
+                    <form id="checkoutForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <input type="text" id="country" name="country" required>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="cart-items">
+                        <div class="cart-item">
+                            <span>Fresh Apples</span>
+                            <span>$2.99</span>
+                        </div>
+                        <div class="cart-item">
+                            <span>Organic Bananas</span>
+                            <span>$1.49</span>
+                        </div>
+                        <div class="cart-item">
+                            <span>Cheddar Cheese</span>
+                            <span>$4.99</span>
+                        </div>
+                    </div>
+                    <div class="order-total">
+                        <h3>Total: <span id="order-total-amount">$9.47</span></h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Method -->
+            <div class="payment-method">
+                <h2>Payment Method</h2>
+                <div class="payment-options">
+                    <label>
+                        <input type="radio" name="payment" value="credit-card" checked>
+                        Credit/Debit Card
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="paypal">
+                        PayPal
+                    </label>
+                </div>
+            </div>
+
+            <!-- Place Order Button -->
+            <button type="submit" form="checkoutForm" class="place-order-btn" onclick="placeOrder()">Place Order</button>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+
+    <script src="assets/JS/checkout.js"></script>
+</body>
+</html>
