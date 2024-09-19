@@ -20,10 +20,11 @@ exit();
 else
 {
     echo "<script> alert('wrong credentials!');  </script>";
-}
-$extra="login.php";
+    $extra="login.php";
 echo "<script>window.location.href='".$extra."'</script>";
 exit();
+}
+
 }
 
 

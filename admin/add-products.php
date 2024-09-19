@@ -66,7 +66,7 @@ function resizeImage($resourceType, $image_width, $image_height, $resizeWidth, $
                                         break;
                                 }
 
-                                $url = $uploadPath . "thump_" . $resizeFileName . "." . $fileExt;
+                                $url =  "thump_" . $resizeFileName . "." . $fileExt;
                                 $m_unit =  $_POST['measurement_unit'];
 
                                 

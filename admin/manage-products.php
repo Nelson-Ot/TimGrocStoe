@@ -73,7 +73,7 @@ $cnt = 1;
                     <td><?php echo htmlspecialchars($product['description']); ?></td>
                     <td>
                         <?php if (!empty($product['image'])): ?>
-                            <img src="<?php echo $product['image']; ?>" alt="<?php echo htmlspecialchars($product['name']); ?>" width="50">
+                            <img src="../images/products/<?php echo $product['image']; ?>" alt="<?php echo htmlspecialchars($product['name']); ?>" width="50">
                         <?php else: ?>
                             No Image
                         <?php endif; ?>

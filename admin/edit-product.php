@@ -88,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 break;
         }
 
-        $url = $uploadPath . "thump_" . $resizeFileName . "." . $fileExt;
+        $url =  "thump_" . $resizeFileName . "." . $fileExt;
     }
 
     // Update the product in the database
